@@ -1,0 +1,282 @@
+/* Estilos personalizados */
+.banner {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff577f;
+    border-color: #ff577f;
+}
+
+.btn-outline-primary {
+    color: #ff577f;
+    border-color: #ff577f;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff577f;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+}
+
+/* Estilo para a seção "Sobre Nossa Empresa" */
+#sobre {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    padding: 50px 0; /* Espaçamento acima e abaixo */
+}
+
+#sobre .container {
+    max-width: 900px; /* Limita a largura para textos mais organizados */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+#sobre h2 {
+    font-size: 36px; /* Tamanho maior para o título */
+    color: #333; /* Cor escura para o título */
+    font-weight: 600; /* Negrito para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+#sobre .lead {
+    font-size: 20px; /* Texto introdutório um pouco maior */
+    color: #555; /* Cor suave para o texto */
+    margin-bottom: 30px; /* Espaço abaixo do parágrafo de introdução */
+}
+
+#sobre p {
+    font-size: 18px; /* Texto principal */
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas para leitura fácil */
+    margin-bottom: 20px; /* Espaço entre os parágrafos */
+}
+
+#sobre .container p:last-of-type {
+    margin-bottom: 0; /* Remove margem do último parágrafo */
+}
+#produtos7{
+    color: red;
+}
+
+
+/* Resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e base do layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header e navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limitar o tamanho máximo */
+    margin: 0 auto; /* Centralizar o conteúdo */
+    padding: 0 20px;
+}
+
+nav h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #eaeaea;
+}
+
+/* Seção de contato */
+.contato {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contato p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Formulário de contato */
+.form-container {
+    max-width: 800px; /* Limitar a largura do formulário */
+    margin: 0 auto; /* Centralizar o formulário */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Informações adicionais de contato */
+.contato-info {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.contato-info h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contato-info ul {
+    list-style: none;
+    padding-left: 20px;
+    text-align: center; /* Centralizar as informações de contato */
+}
+
+.contato-info ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+        max-width: 100%; /* Permitir que o formulário ocupe toda a largura disponível em dispositivos menores */
+    }
+
+    .contato-info ul li {
+        font-size: 16px; /* Ajustar o tamanho da fonte em telas menores */
+    }
+}
+#corpocartao {
+    margin-bottom: 5px; /* Diminui o espaçamento entre os parágrafos */
+  }
+  .preco-antigo, .preco-novo {
+    font-weight: bold; /* Deixa os preços mais destacados */
+    font-size: 16px;
+  }
+  
+  .preco-antigo {
+    text-decoration: line-through; /* Risca o preço antigo */
+    margin-right: 10px; /* Dá um pequeno espaço entre os preços */
+  }
+  
+  .preco-novo {
+    color: green; /* Coloca o preço novo em uma cor mais destacada */
+  }
+
+
+

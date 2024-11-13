@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Derm</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="skincare.css">
+    <link rel="shortcut icon" href="img skincare/logo lumina.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">Lumina Derm</a>
+        <img src="img skincare/logo lumina.png" height="60px" alt="Logo Lumina Derm">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" id="produtos7" href="skincare.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="skincare2.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img src="img skincare/logo teste.png" height="333px" alt="">
+
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img skincare/CeraveHidratante.png" class="d-block w-100" alt="CeraVe Hidratante">
+        </div>
+        <div class="carousel-item">
+            <img src="img skincare/Biore.png" class="d-block w-100" alt="Creamy Sérum">
+        </div>
+        <div class="carousel-item">
+            <img src="img skincare/Water gel.png" class="d-block w-100" alt="Neutrogena Water Gel">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+<!-- Seção Sobre Nós -->
+<section id="sobre" class="sobre">
+    <div class="container text-center">
+        <h2>Sobre Nossa Empresa</h2>
+        <p class="lead">Compromisso com a qualidade, inovação e bem-estar.</p>
+        <p>Na Lumina Derm, nossa missão é proporcionar produtos de cuidados com a pele de alta qualidade, desenvolvidos para atender às necessidades de cada tipo de pele. Acreditamos em um mundo onde cada pessoa pode se sentir confiante em sua própria pele, e trabalhamos para garantir que nossos produtos não só tratem, mas também respeitem a sua saúde e beleza natural.</p>
+        <p>Nosso compromisso vai além de entregar apenas produtos de excelência; buscamos também a sustentabilidade e inovação em todos os processos, garantindo que cada escolha que você faça para sua pele seja segura, eficaz e responsável.</p>
+        <p>Seja bem-vindo ao nosso universo de cuidados e descubra como podemos transformar a sua rotina de beleza.</p>
+    </div>
+</section>
+
+
+<section id="contato" class="contato">
+    <div class="container">
+        <h2>Fale Conosco</h2>
+        <p>Estamos prontos para ajudar você! Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+        <div class="form-container">
+            <form id="formContato" action="enviar-mensagem.php" method="POST">
+                <div class="input-group">
+                    <label for="nome">Nome Completo:   </label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail    :</label>
+                    <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+                </div>
+                <div class="input-group">
+                    <label for="assunto">Assunto:   </label>
+                    <input type="text" id="assunto" name="assunto" required placeholder="Assunto da sua mensagem">
+                </div>
+                <div class="input-group">
+                    <label for="mensagem">Mensagem:   </label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Sua mensagem..."></textarea>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn btn-primary"  onclick="limparFormulario()" data-bs-toggle="modal" data-bs-target="#Mensagem">Enviar Mensagem <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                      </svg></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    function limparFormulario() {
+        document.getElementById('formContato').reset();
+    }
+</script>
+
+
+<section class="contato-info">
+    <div class="container">
+        <h3>Outras Formas de Contato</h3>
+        <ul>
+            <li><strong>Telefone:</strong> (31) 93615-1278</li>
+            <li><strong>Email:</strong> luminaderm2024@gmail.com</li>
+            <li><strong>Endereço:</strong> Av. Brasil 435</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center py-4">
+    <p>&copy; 2024 Lumina Derm. Todos os direitos reservados.</p>
+</footer>
+
+<div class="modal fade" id="Mensagem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+  
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Obrigado pelo Feedback <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Sua Mensagem foi enviada !!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
