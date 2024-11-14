@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Derm</title>
+    <link rel="stylesheet" href="compra.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+   
+    <link rel="shortcut icon" href="img skincare/logo lumina.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">Lumina Derm</a>
+        <img src="img skincare/logo lumina.png" height="60px" alt="Logo Lumina Derm">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="skincare.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="skincare2.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" id="produtos7" href="#sobre">Compra</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img src="img skincare/logo teste.png" height="333px" alt="">
+
+<main>
+
+    <main>
+    
+        <div class="produto">
+            <div class="imagem-produto">
+                <img id="produto-imagem" src="img/placeholder.png" alt="Imagem do Produto">
+            </div>
+            <div class="detalhes-produto">
+                <h1 id="produto-nome" class="produto-nome">Nome do Produto</h1>
+                <p id="produto-preco" class="produto-preco">R$ 0,00</p>
+                <a href="skincare.html">  <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#compra">
+                   <strong><h3>Comprar</h3></strong> 
+                </button></a>
+              
+            <img class="avaliacao" src="img skincare/Avaliação.png" alt="">
+            
+            </div>
+        </div>
+        <div class="modal fade" id="compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmação Compra</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Agradecemos pela Preferencia!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+
+</main>
+
+<footer class="text-center py-4">
+    <p>&copy; 2024 Lumina Derm. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="compra.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
